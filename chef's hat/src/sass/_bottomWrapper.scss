@@ -1,0 +1,31 @@
+.bottom-wrapper {
+  width: 100%;
+  grid-area: wrapper;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  &--menu {
+    display: none;
+  }
+
+  @media only screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+    position: relative;
+
+    &--menu {
+      transition: all 0.5s;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      display: block;
+      height: 5rem;
+      width: 5rem;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 50%;
+      fill: rgba(40, 180, 133, 0.8);
+      z-index: 99;
+      cursor: pointer;
+    }
+  }
+}

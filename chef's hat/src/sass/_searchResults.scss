@@ -1,0 +1,57 @@
+.search-results {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  @media only screen and (max-width: 48em) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3rem;
+    transition: all 0.5s;
+  }
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: 48em) {
+    padding: 0 7rem;
+  }
+}
+
+.pagination {
+  margin-top: auto;
+  padding: 0 3.5rem 2rem 3.5rem;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &__btn {
+    &--prev {
+      float: left;
+    }
+    &--next {
+      float: right;
+    }
+  }
+}
+
+.copyright {
+  color: $color-grey-dark-2;
+  font-size: 1.2rem;
+  padding: 0 3.5rem;
+  margin-top: 4rem;
+
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: $color-grey-dark-2;
+  }
+}
