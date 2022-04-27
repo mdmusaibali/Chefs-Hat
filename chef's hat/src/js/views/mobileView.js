@@ -1,4 +1,4 @@
-class mobileAdjustments {
+class mobileView {
   adjust() {
     document.querySelectorAll('.toRemove').forEach(el => (el.textContent = ''));
 
@@ -20,4 +20,4 @@ class mobileAdjustments {
     document.querySelector('.search-results').classList.add('transform');
   }
 }
-export default new mobileAdjustments();
+export default new mobileView();
